@@ -25,6 +25,7 @@ int main(){
     return 0;
 }
 */
+/*
 int main(){
     int temperatura = 0;
 
@@ -42,4 +43,59 @@ int main(){
     }
 
     return 0;
+}
+*/
+/*
+int main(){
+    int escolha;
+    printf("Escolha seu produto:\n1 para Agua\n2 para Refrigerante\n3 para Suco\n");
+    scanf("%d", &escolha);
+    switch (escolha)
+    {
+    case 1:
+        printf("Você escolheu Agua.\n");
+        break;
+    case 2:
+        printf("Você Escolheu Refrigerante.\n");
+        break;
+    case 3:
+        printf("Você escolheu Suco.\n");
+        break;
+    default:
+        printf("Opção invalida. Escolha uma das opções apresentadas!\n");
+    }
+
+    printf("\n---------Fim do looping!---------\n");
+    return 0;
+}
+*/
+/*
+int main(){
+    for(int i = 0; i < 5; i++){
+        printf("Numero: %d\n", i);
+    }
+    return 0;
+}
+*/
+/*
+int main(){
+    int contador = 0;
+
+    while (contador < 5)
+    {
+        printf("Numero: %d\n", contador);
+        contador++;
+    }
+    return 0;
+}
+*/
+
+int main(){
+    int contador = 0;
+
+    do {
+        printf("Numero: %d\n", contador);
+        contador++;
+    }while (contador < 5);
+    
 }
