@@ -40,6 +40,6 @@ int main(){
     }else{
         printf("EStá quente!\n");
     }
-""
+
     return 0;
 }
