@@ -47,6 +47,7 @@ int main(){
 */
 
 //Implementando um array dinamicamente
+/*
 int main() {
     int *array;
     int size, i;
@@ -78,5 +79,30 @@ int main() {
     // Liberação da memória alocada
     free(array);
     
+    return 0;
+}
+*/
+
+int main(){
+    int count = 0, num = 2, i;
+    int n = 100; // Deseja-se encontrar o 100º numero primo
+    int isPrime;
+
+    while(count < n){
+        isPrime = 1; // Assume que o numero é primo
+        for(i = 2; i * i <= num; i++){
+            if(num % i == 0){
+                isPrime = 0; //O numero nao é primo
+                break;
+            }
+        }
+        if(isPrime){
+            count++;
+            if(count == n){
+                printf("%dº numero primo é %d.\n", n, num);
+            }
+        }
+        num++;
+    }
     return 0;
 }
